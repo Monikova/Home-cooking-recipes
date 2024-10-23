@@ -23,7 +23,7 @@ userController.post('/register', async (req, res) => {
 });
 
 userController.get('/login', (req, res) => {
-    res.render('login', {title: 'Login Page'});
+    res.render('login', {title: 'Login - Home Cooking Recipes'});
 }); 
 
 userController.post('/login', async (req, res) => {

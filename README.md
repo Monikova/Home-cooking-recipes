@@ -5,3 +5,4 @@ JS Back-End old exam task @SoftUni
 2. Add resources for task;  
 3. Adjust views
   - home page; 
+  - login and register; 

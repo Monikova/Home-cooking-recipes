@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{!-- <title>Home Cooking Recipes</title> --}}
     <title>{{title}}</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    {{!-- <link rel="stylesheet" href="/public/css/styles.css"> --}}
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         </nav>
     </header>
         
-    <main>
+    {{!-- <main>
         <!-- In case of error, you should display div with class "errorContainer" -->
         <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
         {{#if error}}
@@ -36,10 +37,12 @@
         </div>
         {{/if}}
 
-
     {{{body}}}
 
-    </main>   
+    </main>   --}}
+
+        {{{body}}}
+
     <footer>
         <p>&copy; 2024 Home Cooking Recipes. All rights reserved.</p>
     </footer>
