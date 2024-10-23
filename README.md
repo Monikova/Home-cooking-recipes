@@ -6,3 +6,5 @@ JS Back-End old exam task @SoftUni
 3. Adjust views
   - home page; 
   - login and register; 
+  - main layout with dynamic navigation;
+  - 404; 

@@ -8,7 +8,7 @@ router.use(homeController);
 router.use(userController);
 
 router.all('*', (req, res) => {
-    res.render('404', {title: '404 Page'});
+    res.render('404', {title: 'Page Not Found - Home Cooking Recipes'});
 })
 
 export default router; 

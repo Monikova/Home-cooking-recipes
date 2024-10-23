@@ -17,8 +17,8 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/recipes">Recipes</a></li>
                 <li><a href="/search">Search</a></li>
-                <li><a href="/create">Add Recipe</a></li>
                 {{#if isAuthenticated}}
+                <li><a href="/create">Add Recipe</a></li>
                 <li><a href="/logout">Logout</a></li>
                 {{else}}
                 <li><a href="/login">Login</a></li>
@@ -27,19 +27,6 @@
             </ul>
         </nav>
     </header>
-        
-    {{!-- <main>
-        <!-- In case of error, you should display div with class "errorContainer" -->
-        <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
-        {{#if error}}
-        <div class="error-container">
-            <p>{{error}}</p>
-        </div>
-        {{/if}}
-
-    {{{body}}}
-
-    </main>   --}}
 
         {{{body}}}
 
