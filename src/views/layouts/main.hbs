@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{!-- <title>Home Cooking Recipes</title> --}}
     <title>{{title}}</title>
     <link rel="stylesheet" href="/styles/styles.css">
-    {{!-- <link rel="stylesheet" href="/public/css/styles.css"> --}}
 </head>
 
 <body>
@@ -28,7 +26,17 @@
         </nav>
     </header>
 
+    <main>
+        {{#if error}}
+        <div class="error-container">
+            <p>{{error}}</p>
+        </div>
+        {{/if}}
+
+
         {{{body}}}
+
+    </main>
 
     <footer>
         <p>&copy; 2024 Home Cooking Recipes. All rights reserved.</p>

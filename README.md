@@ -10,3 +10,4 @@ JS Back-End old exam task @SoftUni
   - 404; 
 4. Check if user model needs changes
 5. Add recipe model
+6. Render error message container
