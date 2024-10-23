@@ -3,73 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Page</title>
-    <link rel="stylesheet" href="./static/css/styles.css" />
+    <title>Edit Recipe - Home Cooking Recipes</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-
-    <header class="header">
+    <header>
         <nav>
-            <img src="./static/images/logo.avif" class="logo">
             <ul>
                 <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
                 <li><a href="#">Search</a></li>
-                <li><a href="#">All Volcanoes</a></li>
-                <li><a href="#">Create Volcano Wiki</a></li>
+                <li><a href="#">Add Recipe</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Register</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <!-- In case of error, you should display div with class "errorContainer" -->
-        <!-- You can choose to display the first error or all of them (error message/s in your opinion) -->
+        <section class="form-container">
+            <h2>Edit Recipe</h2>
+            <form action="#">
+                <label for="title">Recipe Title:</label>
+                <input type="text" id="title" name="" value="Spaghetti Carbonara">
 
-        <!-- <div>
-            <div class="errorContainer">
-                <p>Error</p>
-            </div>
-        </div> -->
+                <label for="description">Description:</label>
+                <textarea id="description" name="">A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</textarea>
 
-        <section id="edit-container">
-            <div class="edit-container-info">
-                <h1>Edit Announcement</h1>
-                <form action="#" method="">
-                    <label>Name:</label>
-                    <input type="text" id="name" name="" value="Hunga Tonga">
-                    <label>Location:</label>
-                    <input type="text" id="location" name="" value="Tonga Islands">
-                    <label>Elevation:</label>
-                    <input type="number" id="elevations" name="" value="114">
-                    <label>Year of Last Eruption:</label>
-                    <input type="number" id="last-year-eruption" name="" value="2022">
-                    <label>Image:</label>
-                    <input type="text" id="image" name=""
-                        value="https://media.nature.com/lw767/magazine-assets/d41586-022-00137-z/d41586-022-00137-z_20047302.jpg">
-                    <label>Volcano Type:</label>
-                    <select id="type" name="">
-                        <option value="Supervolcanoes">Supervolcanoes</option>
-                        <option value="Submarine" selected>Submarine</option>
-                        <option value="Subglacial">Subglacial</option>
-                        <option value="Mud">Mud</option>
-                        <option value="Stratovolcanoes">Stratovolcanoes</option>
-                        <option value="Shield">Shield</option>
-                    </select>
-                    <label>Description:</label>
-                    <textarea id="description" name="" placeholder="...">Hunga Tonga-Hunga is a submarine volcano in the South Pacific located about 30 km south of the submarine volcano of Fonuafo'ou and 65 km north of Tongatapu, Tonga's main island. It is part of the highly active Kermadec-Tonga subduction zone and its associated volcanic arc, which extends from New Zealand north-northeast to Fiji, and is formed by the subduction of the Pacific Plate under the Indo-Australian Plate. It lies about 100 km above a very active seismic zone.</textarea>
-                    <input type="submit" id="btn" value="Submit"></input>
-                </form>
-            </div>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="">200g spaghetti / 100g pancetta / 2 large eggs / 50g pecorino cheese / 50g parmesan / Freshly ground black pepper / Salt / 2 cloves of garlic / 50g unsalted butter</textarea>
+
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="">Put a large saucepan of water on to boil. Finely chop the pancetta, having first removed any rind. Finely grate both cheeses and mix them together. Beat the eggs in a medium bowl, season with a little freshly grated black pepper and set everything aside. Add 1 tsp salt to the boiling water, add the spaghetti and when the water comes back to the boil, cook at a constant simmer, covered, for 10 minutes or until al dente. Squash 2 peeled plump garlic cloves with the blade of a knife, just to bruise it. While the spaghetti is cooking, fry the pancetta with the garlic. Keep the heat hot for a few minutes and when the pancetta is golden and crisp, discard the garlic. Take the pan off the heat and set aside. Save some of the pasta water and then drain the spaghetti and add it to the pancetta. Mix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later. Quickly pour the eggs and cheese into the pasta, lifting up the spaghetti so it mixes easily. Use the reserved water to keep it saucy, if necessary. Serve immediately with a little sprinkling of the remaining cheese and a grating of black pepper.</textarea>
+
+                <label for="image">Image URL:</label>
+                <input type="url" id="image" name="" value="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-square640-v2.jpg">
+
+                <button type="submit">Save Changes</button>
+            </form>
         </section>
     </main>
-
     <footer>
-        <p>&copy JS Back-End 2024</p>
+        <p>&copy; 2024 Home Cooking Recipes. All rights reserved.</p>
     </footer>
 </body>
 

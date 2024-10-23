@@ -6,7 +6,7 @@ import { getErrorMessage } from "../utils/errorUtils.js";
 const userController = Router(); 
 
 userController.get('/register', (req, res) => {
-    res.render('register', {title: 'Register Page'});
+    res.render('register', {title: 'Register - Home Cooking Recipes'});
 });
 
 userController.post('/register', async (req, res) => {
@@ -18,7 +18,7 @@ userController.post('/register', async (req, res) => {
         res.redirect('/');
     } catch(err) {
         const error = getErrorMessage(err);
-        res.render('register', {title: 'Register Page', username, email, error});
+        res.render('register', {title: 'Register - Home Cooking Recipes', username, email, error});
     }
 });
 
@@ -35,7 +35,7 @@ userController.post('/login', async (req, res) => {
         res.redirect('/');
     } catch (err) {
         const error = getErrorMessage(err);
-        res.render('login', {title: 'Login Page', email, error});
+        res.render('login', {title: 'Login - Home Cooking Recipes', email, error});
     }
 }); 
 

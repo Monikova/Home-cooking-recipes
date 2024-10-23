@@ -8,3 +8,5 @@ JS Back-End old exam task @SoftUni
   - login and register; 
   - main layout with dynamic navigation;
   - 404; 
+4. Check if user model needs changes
+5. Add recipe model
